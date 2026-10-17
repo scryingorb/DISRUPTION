@@ -1,0 +1,38 @@
+{
+  "version": "v1.0.0",
+  "url": "https://github.com/scryingorb/DISRUPTION/releases/tag/v1.0.0",
+  "draft": false,
+  "prerelease": false,
+  "workflow_url": "https://github.com/scryingorb/DISRUPTION/actions/runs/39012819378",
+  "workflow_result": "success",
+  "installer_build": "success",
+  "installed_plugin_host_validation": "success",
+  "uninstall_verification": "success",
+  "source_commit": "4963e944b80b2d926459da4a8a92d5746b45ff8f",
+  "assets": [
+    {
+      "name": "DISRUPTION-1.0.0-Windows-x64-Setup.exe",
+      "bytes": 6712933,
+      "url": "https://github.com/scryingorb/DISRUPTION/releases/download/v1.0.0/DISRUPTION-1.0.0-Windows-x64-Setup.exe",
+      "digest": "sha256:16bb5393c442a4d43e10b57264f3c6a69e2a74dcb3d24437d0960f25e7ce3c7d"
+    },
+    {
+      "name": "DISRUPTION-1.0.0-Windows-x64-VST3.zip",
+      "bytes": 5777401,
+      "url": "https://github.com/scryingorb/DISRUPTION/releases/download/v1.0.0/DISRUPTION-1.0.0-Windows-x64-VST3.zip",
+      "digest": "sha256:1a4bedc3cd3e5da0e964ec8dfa07854b22e612012eb3e0f730734605b3bde4da"
+    },
+    {
+      "name": "DISRUPTION.png",
+      "bytes": 144959,
+      "url": "https://github.com/scryingorb/DISRUPTION/releases/download/v1.0.0/DISRUPTION.png",
+      "digest": "sha256:27829d48e56bf92c7b37feb424176fa730e3e3c552a18e2cdc4b69f50eeec0c7"
+    },
+    {
+      "name": "SHA256SUMS.txt",
+      "bytes": 211,
+      "url": "https://github.com/scryingorb/DISRUPTION/releases/download/v1.0.0/SHA256SUMS.txt",
+      "digest": "sha256:8d6b269a239b54cdb7b963099a969b39470e83c296b62d5611b297544ec7c034"
+    }
+  ]
+}

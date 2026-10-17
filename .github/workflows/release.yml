@@ -1,0 +1,79 @@
+name: Windows VST3 installer and release
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/release.yml'
+      - 'Source/**'
+      - 'Resources/**'
+      - 'Installer/**'
+      - 'CMakeLists.txt'
+      - 'CHANGELOG.md'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: disruption-release
+  cancel-in-progress: false
+
+jobs:
+  windows:
+    runs-on: windows-2022
+    timeout-minutes: 35
+    defaults:
+      run:
+        shell: pwsh
+    steps:
+      - uses: actions/checkout@v4
+      - name: Configure pinned JUCE Windows x64 build
+        run: cmake -S . -B build -A x64 -DDISRUPTION_BUILD_TESTS=ON -DDISRUPTION_RC_LABEL=
+      - name: Build VST3 and actual plugin host
+        run: cmake --build build --config Release --parallel 2
+      - name: Host smoke test on the compiled bundle
+        run: |
+          $bundle = (Resolve-Path 'build/DISRUPTION_artefacts/Release/VST3/DISRUPTION.vst3').Path
+          & 'build/Release/DisruptionTests.exe' $bundle --clean-location
+          if ($LASTEXITCODE -ne 0) { throw 'Actual VST3 host validation failed' }
+      - name: Prepare portable VST3 package
+        run: |
+          $ErrorActionPreference = 'Stop'
+          New-Item -ItemType Directory -Force release/package-docs/ThirdPartyLicenses,release/portable | Out-Null
+          Copy-Item README.md,CHANGELOG.md,INSTALLATION.md release/package-docs
+          Copy-Item ThirdPartyLicenses/JUCE-LICENSE.md release/package-docs/ThirdPartyLicenses
+          Copy-Item Docs/Images/DISRUPTION.png release/package-docs
+          Copy-Item build/DISRUPTION_artefacts/Release/VST3/DISRUPTION.vst3 release/portable -Recurse
+          Copy-Item release/package-docs/* release/portable -Recurse
+          Compress-Archive -Path release/portable/* -DestinationPath release/DISRUPTION-1.0.0-Windows-x64-VST3.zip
+      - name: Compile Inno Setup installer
+        run: |
+          & "${env:ProgramFiles(x86)}/Inno Setup 6/ISCC.exe" Installer/DISRUPTION.iss
+          if ($LASTEXITCODE -ne 0) { throw 'Installer compilation failed' }
+      - name: Verify silent installer and uninstall in isolated directories
+        run: |
+          $ErrorActionPreference = 'Stop'
+          $installer = (Resolve-Path 'release/DISRUPTION-1.0.0-Windows-x64-Setup.exe').Path
+          $installRoot = Join-Path $env:RUNNER_TEMP 'DISRUPTION-Installer-Test'
+          $installLog = Join-Path $env:RUNNER_TEMP 'DISRUPTION-install.log'
+          $proc = Start-Process -FilePath $installer -ArgumentList @('/VERYSILENT','/SUPPRESSMSGBOXES','/NORESTART',"/DIR=`"$installRoot`"", "/LOG=`"$installLog`"") -Wait -PassThru -WindowStyle Hidden
+          if ($proc.ExitCode -ne 0) { throw "Installer returned $($proc.ExitCode)" }
+          $installedDll = 'C:/Program Files/Common Files/VST3/DISRUPTION.vst3/Contents/x86_64-win/DISRUPTION.vst3'
+          $builtDll = 'build/DISRUPTION_artefacts/Release/VST3/DISRUPTION.vst3/Contents/x86_64-win/DISRUPTION.vst3'
+          if ((Get-FileHash $installedDll).Hash -ne (Get-FileHash $builtDll).Hash) { throw 'Installed DLL hash differs' }
+          & 'build/Release/DisruptionTests.exe' 'C:/Program Files/Common Files/VST3/DISRUPTION.vst3' --clean-location
+          if ($LASTEXITCODE -ne 0) { throw 'Installed plugin host validation failed' }
+          $uninstaller = Join-Path $installRoot 'unins000.exe'
+          $uninstall = Start-Process -FilePath $uninstaller -ArgumentList '/VERYSILENT','/SUPPRESSMSGBOXES','/NORESTART' -Wait -PassThru -WindowStyle Hidden
+          if ($uninstall.ExitCode -ne 0) { throw 'Uninstall failed' }
+          if (Test-Path $installedDll) { throw 'Installed DLL remains after uninstall' }
+      - name: Hash release assets
+        run: |
+          Get-ChildItem release/*.exe,release/*.zip | ForEach-Object { "$((Get-FileHash $_.FullName -Algorithm SHA256).Hash.ToLower())  $($_.Name)" } | Set-Content release/SHA256SUMS.txt -Encoding ascii
+      - name: Publish DISRUPTION 1.0.0
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh release create v1.0.0 release/DISRUPTION-1.0.0-Windows-x64-Setup.exe release/DISRUPTION-1.0.0-Windows-x64-VST3.zip release/SHA256SUMS.txt Docs/Images/DISRUPTION.png --repo '${{ github.repository }}' --target '${{ github.sha }}' --title 'DISRUPTION 1.0.0' --notes-file Installer/RELEASE-NOTES.md --latest
+          if ($LASTEXITCODE -ne 0) { throw 'Release publishing failed' }

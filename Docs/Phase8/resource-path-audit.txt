@@ -1,0 +1,14 @@
+Source\PluginEditor.cpp:2:#include <BinaryData.h>
+Source\PluginEditor.cpp:11:      BinaryData::DisruptionArtwork_png, BinaryData::DisruptionArtwork_pngSize);
+Source\PluginEditor.cpp:51:  refreshVisuals();
+Source\PluginEditor.cpp:58:void DisruptionEditor::refreshVisuals() {
+Source\PluginEditor.h:14:  void refreshVisuals(); // Same message-thread update used by timer and preview
+Source\PluginEditor.h:16:  uint64_t animationFrameCount() const noexcept { return timerFrames; }
+Source\PluginEditor.h:22:    refreshVisuals();
+Source\Presets\PresetManager.h:16:  static juce::File defaultUserDirectory();
+Source\Presets\PresetManager.h:24:  setUserDirectory(const juce::File &); // Injected by tests; no callback use.
+Source\Presets\PresetManager.cpp:2:#include <BinaryData.h>
+Source\Presets\PresetManager.cpp:84:    : state(s), directory(defaultUserDirectory()) {
+Source\Presets\PresetManager.cpp:86:      BinaryData::FactoryPresets_xml, BinaryData::FactoryPresets_xmlSize));
+Source\Presets\PresetManager.cpp:102:juce::File PresetManager::defaultUserDirectory() {
+Source\Presets\PresetManager.cpp:120:void PresetManager::setUserDirectory(const juce::File &path) {

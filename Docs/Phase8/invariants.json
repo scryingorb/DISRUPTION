@@ -1,0 +1,14 @@
+{
+  "frozen_files": 37,
+  "dist_files": 2,
+  "checks": 350132333,
+  "phase8_checks": 202948346,
+  "extreme_cases": 9600,
+  "rate_buffer_rows": 5952,
+  "archived_dll_rows": 240,
+  "cpu_rows": 40,
+  "similarity_pairs": 435,
+  "private_bytes_growth_after50": -37945344,
+  "handle_growth": 0,
+  "gdi_growth": 0
+}

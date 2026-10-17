@@ -1,0 +1,5 @@
+Source\UI\VisualizerBridge.h:7:  static_assert(std::atomic<bool>::is_always_lock_free &&
+Source\PluginEditor.cpp:9:  // Retain only appropriately sized 2x artwork; the full decode is temporary.
+Source\Presets\PresetManager.cpp:249:  juce::TemporaryFile temp(p.file);
+Source\Presets\PresetManager.cpp:251:    return juce::Result::fail("Could not write temporary preset.");
+Source\Presets\PresetManager.cpp:252:  if (!temp.overwriteTargetFileWithTemporary())

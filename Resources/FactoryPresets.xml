@@ -1,0 +1,375 @@
+<?xml version='1.0' encoding='utf-8'?>
+<DISRUPTION_FACTORY_BANK version="1" manufacturer="VoxxLab" plugin="DISRUPTION">
+  <DISRUPTION_PRESET version="1" id="factory.init" name="INIT" author="VoxxLab" category="INIT" manufacturer="VoxxLab" plugin="DISRUPTION" source="reference">
+    <PARAM id="mode" value="0" />
+    <PARAM id="drive" value="0" />
+    <PARAM id="damage" value="0" />
+    <PARAM id="tone" value="0" />
+    <PARAM id="body" value="0" />
+    <PARAM id="crush" value="0" />
+    <PARAM id="mix" value="100" />
+    <PARAM id="output" value="0" />
+    <PARAM id="hq" value="0" />
+    <PARAM id="bypass" value="0" />
+  </DISRUPTION_PRESET>
+  <DISRUPTION_PRESET version="1" id="factory.burn.vocal-heat" name="Vocal Heat" author="VoxxLab" category="BURN" manufacturer="VoxxLab" plugin="DISRUPTION" source="vocal">
+    <PARAM id="mode" value="0" />
+    <PARAM id="drive" value="3" />
+    <PARAM id="damage" value="18" />
+    <PARAM id="tone" value="8" />
+    <PARAM id="body" value="10" />
+    <PARAM id="crush" value="0" />
+    <PARAM id="mix" value="35" />
+    <PARAM id="output" value="-1" />
+    <PARAM id="hq" value="1" />
+    <PARAM id="bypass" value="0" />
+  </DISRUPTION_PRESET>
+  <DISRUPTION_PRESET version="1" id="factory.burn.warm-blood" name="Warm Blood" author="VoxxLab" category="BURN" manufacturer="VoxxLab" plugin="DISRUPTION" source="vocal">
+    <PARAM id="mode" value="0" />
+    <PARAM id="drive" value="8" />
+    <PARAM id="damage" value="38" />
+    <PARAM id="tone" value="-25" />
+    <PARAM id="body" value="45" />
+    <PARAM id="crush" value="0" />
+    <PARAM id="mix" value="65" />
+    <PARAM id="output" value="-6.68" />
+    <PARAM id="hq" value="1" />
+    <PARAM id="bypass" value="0" />
+  </DISRUPTION_PRESET>
+  <DISRUPTION_PRESET version="1" id="factory.burn.bass-furnace" name="Bass Furnace" author="VoxxLab" category="BURN" manufacturer="VoxxLab" plugin="DISRUPTION" source="bass">
+    <PARAM id="mode" value="0" />
+    <PARAM id="drive" value="14" />
+    <PARAM id="damage" value="55" />
+    <PARAM id="tone" value="-45" />
+    <PARAM id="body" value="70" />
+    <PARAM id="crush" value="0" />
+    <PARAM id="mix" value="85" />
+    <PARAM id="output" value="-11.5" />
+    <PARAM id="hq" value="1" />
+    <PARAM id="bypass" value="0" />
+  </DISRUPTION_PRESET>
+  <DISRUPTION_PRESET version="1" id="factory.burn.drum-ember" name="Drum Ember" author="VoxxLab" category="BURN" manufacturer="VoxxLab" plugin="DISRUPTION" source="drums">
+    <PARAM id="mode" value="0" />
+    <PARAM id="drive" value="12" />
+    <PARAM id="damage" value="45" />
+    <PARAM id="tone" value="40" />
+    <PARAM id="body" value="20" />
+    <PARAM id="crush" value="0" />
+    <PARAM id="mix" value="50" />
+    <PARAM id="output" value="-4" />
+    <PARAM id="hq" value="0" />
+    <PARAM id="bypass" value="0" />
+  </DISRUPTION_PRESET>
+  <DISRUPTION_PRESET version="1" id="factory.burn.melted-synth" name="Melted Synth" author="VoxxLab" category="BURN" manufacturer="VoxxLab" plugin="DISRUPTION" source="synth">
+    <PARAM id="mode" value="0" />
+    <PARAM id="drive" value="18" />
+    <PARAM id="damage" value="65" />
+    <PARAM id="tone" value="-32" />
+    <PARAM id="body" value="25" />
+    <PARAM id="crush" value="15" />
+    <PARAM id="mix" value="85" />
+    <PARAM id="output" value="-12.88" />
+    <PARAM id="hq" value="1" />
+    <PARAM id="bypass" value="0" />
+  </DISRUPTION_PRESET>
+  <DISRUPTION_PRESET version="1" id="factory.burn.full-burn" name="Full Burn" author="VoxxLab" category="BURN" manufacturer="VoxxLab" plugin="DISRUPTION" source="guitar">
+    <PARAM id="mode" value="0" />
+    <PARAM id="drive" value="30" />
+    <PARAM id="damage" value="90" />
+    <PARAM id="tone" value="-12" />
+    <PARAM id="body" value="20" />
+    <PARAM id="crush" value="0" />
+    <PARAM id="mix" value="100" />
+    <PARAM id="output" value="-17.28" />
+    <PARAM id="hq" value="1" />
+    <PARAM id="bypass" value="0" />
+  </DISRUPTION_PRESET>
+  <DISRUPTION_PRESET version="1" id="factory.break.redline-vocal" name="Redline Vocal" author="VoxxLab" category="BREAK" manufacturer="VoxxLab" plugin="DISRUPTION" source="vocal">
+    <PARAM id="mode" value="1" />
+    <PARAM id="drive" value="12" />
+    <PARAM id="damage" value="58" />
+    <PARAM id="tone" value="-18" />
+    <PARAM id="body" value="15" />
+    <PARAM id="crush" value="0" />
+    <PARAM id="mix" value="55" />
+    <PARAM id="output" value="-7.03" />
+    <PARAM id="hq" value="1" />
+    <PARAM id="bypass" value="0" />
+  </DISRUPTION_PRESET>
+  <DISRUPTION_PRESET version="1" id="factory.break.snare-breaker" name="Snare Breaker" author="VoxxLab" category="BREAK" manufacturer="VoxxLab" plugin="DISRUPTION" source="drums">
+    <PARAM id="mode" value="1" />
+    <PARAM id="drive" value="18" />
+    <PARAM id="damage" value="75" />
+    <PARAM id="tone" value="28" />
+    <PARAM id="body" value="35" />
+    <PARAM id="crush" value="20" />
+    <PARAM id="mix" value="80" />
+    <PARAM id="output" value="-9.43" />
+    <PARAM id="hq" value="0" />
+    <PARAM id="bypass" value="0" />
+  </DISRUPTION_PRESET>
+  <DISRUPTION_PRESET version="1" id="factory.break.flatline-808" name="Flatline 808" author="VoxxLab" category="BREAK" manufacturer="VoxxLab" plugin="DISRUPTION" source="bass">
+    <PARAM id="mode" value="1" />
+    <PARAM id="drive" value="24" />
+    <PARAM id="damage" value="85" />
+    <PARAM id="tone" value="-35" />
+    <PARAM id="body" value="60" />
+    <PARAM id="crush" value="0" />
+    <PARAM id="mix" value="90" />
+    <PARAM id="output" value="-13.97" />
+    <PARAM id="hq" value="1" />
+    <PARAM id="bypass" value="0" />
+  </DISRUPTION_PRESET>
+  <DISRUPTION_PRESET version="1" id="factory.break.concrete-drums" name="Concrete Drums" author="VoxxLab" category="BREAK" manufacturer="VoxxLab" plugin="DISRUPTION" source="drums">
+    <PARAM id="mode" value="1" />
+    <PARAM id="drive" value="22" />
+    <PARAM id="damage" value="78" />
+    <PARAM id="tone" value="-15" />
+    <PARAM id="body" value="35" />
+    <PARAM id="crush" value="35" />
+    <PARAM id="mix" value="65" />
+    <PARAM id="output" value="-10.75" />
+    <PARAM id="hq" value="1" />
+    <PARAM id="bypass" value="0" />
+  </DISRUPTION_PRESET>
+  <DISRUPTION_PRESET version="1" id="factory.break.hardwired" name="Hardwired" author="VoxxLab" category="BREAK" manufacturer="VoxxLab" plugin="DISRUPTION" source="synth">
+    <PARAM id="mode" value="1" />
+    <PARAM id="drive" value="26" />
+    <PARAM id="damage" value="90" />
+    <PARAM id="tone" value="35" />
+    <PARAM id="body" value="0" />
+    <PARAM id="crush" value="0" />
+    <PARAM id="mix" value="100" />
+    <PARAM id="output" value="-10.61" />
+    <PARAM id="hq" value="1" />
+    <PARAM id="bypass" value="0" />
+  </DISRUPTION_PRESET>
+  <DISRUPTION_PRESET version="1" id="factory.break.total-collapse" name="Total Collapse" author="VoxxLab" category="BREAK" manufacturer="VoxxLab" plugin="DISRUPTION" source="fx">
+    <PARAM id="mode" value="1" />
+    <PARAM id="drive" value="36" />
+    <PARAM id="damage" value="100" />
+    <PARAM id="tone" value="-60" />
+    <PARAM id="body" value="25" />
+    <PARAM id="crush" value="70" />
+    <PARAM id="mix" value="100" />
+    <PARAM id="output" value="-9.74" />
+    <PARAM id="hq" value="1" />
+    <PARAM id="bypass" value="0" />
+  </DISRUPTION_PRESET>
+  <DISRUPTION_PRESET version="1" id="factory.rip.torn-voice" name="Torn Voice" author="VoxxLab" category="RIP" manufacturer="VoxxLab" plugin="DISRUPTION" source="vocal">
+    <PARAM id="mode" value="2" />
+    <PARAM id="drive" value="12" />
+    <PARAM id="damage" value="55" />
+    <PARAM id="tone" value="15" />
+    <PARAM id="body" value="30" />
+    <PARAM id="crush" value="0" />
+    <PARAM id="mix" value="65" />
+    <PARAM id="output" value="-7.38" />
+    <PARAM id="hq" value="1" />
+    <PARAM id="bypass" value="0" />
+  </DISRUPTION_PRESET>
+  <DISRUPTION_PRESET version="1" id="factory.rip.blown-cone" name="Blown Cone" author="VoxxLab" category="RIP" manufacturer="VoxxLab" plugin="DISRUPTION" source="guitar">
+    <PARAM id="mode" value="2" />
+    <PARAM id="drive" value="20" />
+    <PARAM id="damage" value="80" />
+    <PARAM id="tone" value="-65" />
+    <PARAM id="body" value="15" />
+    <PARAM id="crush" value="25" />
+    <PARAM id="mix" value="100" />
+    <PARAM id="output" value="-17.24" />
+    <PARAM id="hq" value="0" />
+    <PARAM id="bypass" value="0" />
+  </DISRUPTION_PRESET>
+  <DISRUPTION_PRESET version="1" id="factory.rip.crooked-bass" name="Crooked Bass" author="VoxxLab" category="RIP" manufacturer="VoxxLab" plugin="DISRUPTION" source="bass">
+    <PARAM id="mode" value="2" />
+    <PARAM id="drive" value="16" />
+    <PARAM id="damage" value="60" />
+    <PARAM id="tone" value="-22" />
+    <PARAM id="body" value="55" />
+    <PARAM id="crush" value="0" />
+    <PARAM id="mix" value="85" />
+    <PARAM id="output" value="-12.04" />
+    <PARAM id="hq" value="1" />
+    <PARAM id="bypass" value="0" />
+  </DISRUPTION_PRESET>
+  <DISRUPTION_PRESET version="1" id="factory.rip.razor-lead" name="Razor Lead" author="VoxxLab" category="RIP" manufacturer="VoxxLab" plugin="DISRUPTION" source="synth">
+    <PARAM id="mode" value="2" />
+    <PARAM id="drive" value="24" />
+    <PARAM id="damage" value="85" />
+    <PARAM id="tone" value="40" />
+    <PARAM id="body" value="0" />
+    <PARAM id="crush" value="35" />
+    <PARAM id="mix" value="90" />
+    <PARAM id="output" value="-9.15" />
+    <PARAM id="hq" value="1" />
+    <PARAM id="bypass" value="0" />
+  </DISRUPTION_PRESET>
+  <DISRUPTION_PRESET version="1" id="factory.rip.factory-floor" name="Factory Floor" author="VoxxLab" category="RIP" manufacturer="VoxxLab" plugin="DISRUPTION" source="drums">
+    <PARAM id="mode" value="2" />
+    <PARAM id="drive" value="22" />
+    <PARAM id="damage" value="78" />
+    <PARAM id="tone" value="-25" />
+    <PARAM id="body" value="25" />
+    <PARAM id="crush" value="60" />
+    <PARAM id="mix" value="80" />
+    <PARAM id="output" value="-11.6" />
+    <PARAM id="hq" value="0" />
+    <PARAM id="bypass" value="0" />
+  </DISRUPTION_PRESET>
+  <DISRUPTION_PRESET version="1" id="factory.rip.shredded" name="Shredded" author="VoxxLab" category="RIP" manufacturer="VoxxLab" plugin="DISRUPTION" source="fx">
+    <PARAM id="mode" value="2" />
+    <PARAM id="drive" value="36" />
+    <PARAM id="damage" value="100" />
+    <PARAM id="tone" value="25" />
+    <PARAM id="body" value="15" />
+    <PARAM id="crush" value="80" />
+    <PARAM id="mix" value="100" />
+    <PARAM id="output" value="-9.94" />
+    <PARAM id="hq" value="1" />
+    <PARAM id="bypass" value="0" />
+  </DISRUPTION_PRESET>
+  <DISRUPTION_PRESET version="1" id="factory.crush.digital-dust" name="Digital Dust" author="VoxxLab" category="CRUSH" manufacturer="VoxxLab" plugin="DISRUPTION" source="vocal">
+    <PARAM id="mode" value="3" />
+    <PARAM id="drive" value="2" />
+    <PARAM id="damage" value="22" />
+    <PARAM id="tone" value="10" />
+    <PARAM id="body" value="0" />
+    <PARAM id="crush" value="0" />
+    <PARAM id="mix" value="30" />
+    <PARAM id="output" value="-1" />
+    <PARAM id="hq" value="0" />
+    <PARAM id="bypass" value="0" />
+  </DISRUPTION_PRESET>
+  <DISRUPTION_PRESET version="1" id="factory.crush.broken-codec" name="Broken Codec" author="VoxxLab" category="CRUSH" manufacturer="VoxxLab" plugin="DISRUPTION" source="vocal">
+    <PARAM id="mode" value="3" />
+    <PARAM id="drive" value="7" />
+    <PARAM id="damage" value="55" />
+    <PARAM id="tone" value="-25" />
+    <PARAM id="body" value="20" />
+    <PARAM id="crush" value="35" />
+    <PARAM id="mix" value="70" />
+    <PARAM id="output" value="-5.64" />
+    <PARAM id="hq" value="0" />
+    <PARAM id="bypass" value="0" />
+  </DISRUPTION_PRESET>
+  <DISRUPTION_PRESET version="1" id="factory.crush.bit-wound" name="Bit Wound" author="VoxxLab" category="CRUSH" manufacturer="VoxxLab" plugin="DISRUPTION" source="synth">
+    <PARAM id="mode" value="3" />
+    <PARAM id="drive" value="10" />
+    <PARAM id="damage" value="72" />
+    <PARAM id="tone" value="25" />
+    <PARAM id="body" value="0" />
+    <PARAM id="crush" value="0" />
+    <PARAM id="mix" value="100" />
+    <PARAM id="output" value="-5.86" />
+    <PARAM id="hq" value="0" />
+    <PARAM id="bypass" value="0" />
+  </DISRUPTION_PRESET>
+  <DISRUPTION_PRESET version="1" id="factory.crush.dead-circuit" name="Dead Circuit" author="VoxxLab" category="CRUSH" manufacturer="VoxxLab" plugin="DISRUPTION" source="drums">
+    <PARAM id="mode" value="3" />
+    <PARAM id="drive" value="14" />
+    <PARAM id="damage" value="78" />
+    <PARAM id="tone" value="-15" />
+    <PARAM id="body" value="35" />
+    <PARAM id="crush" value="55" />
+    <PARAM id="mix" value="75" />
+    <PARAM id="output" value="-9.52" />
+    <PARAM id="hq" value="0" />
+    <PARAM id="bypass" value="0" />
+  </DISRUPTION_PRESET>
+  <DISRUPTION_PRESET version="1" id="factory.crush.low-resolution" name="Low Resolution" author="VoxxLab" category="CRUSH" manufacturer="VoxxLab" plugin="DISRUPTION" source="synth">
+    <PARAM id="mode" value="3" />
+    <PARAM id="drive" value="5" />
+    <PARAM id="damage" value="88" />
+    <PARAM id="tone" value="-40" />
+    <PARAM id="body" value="20" />
+    <PARAM id="crush" value="20" />
+    <PARAM id="mix" value="100" />
+    <PARAM id="output" value="-5.84" />
+    <PARAM id="hq" value="0" />
+    <PARAM id="bypass" value="0" />
+  </DISRUPTION_PRESET>
+  <DISRUPTION_PRESET version="1" id="factory.crush.system-failure" name="System Failure" author="VoxxLab" category="CRUSH" manufacturer="VoxxLab" plugin="DISRUPTION" source="fx">
+    <PARAM id="mode" value="3" />
+    <PARAM id="drive" value="24" />
+    <PARAM id="damage" value="100" />
+    <PARAM id="tone" value="-35" />
+    <PARAM id="body" value="35" />
+    <PARAM id="crush" value="100" />
+    <PARAM id="mix" value="100" />
+    <PARAM id="output" value="-17.06" />
+    <PARAM id="hq" value="0" />
+    <PARAM id="bypass" value="0" />
+  </DISRUPTION_PRESET>
+  <DISRUPTION_PRESET version="1" id="factory.chaos.fracture" name="Fracture" author="VoxxLab" category="CHAOS" manufacturer="VoxxLab" plugin="DISRUPTION" source="guitar">
+    <PARAM id="mode" value="4" />
+    <PARAM id="drive" value="3" />
+    <PARAM id="damage" value="18" />
+    <PARAM id="tone" value="10" />
+    <PARAM id="body" value="15" />
+    <PARAM id="crush" value="0" />
+    <PARAM id="mix" value="25" />
+    <PARAM id="output" value="-1" />
+    <PARAM id="hq" value="0" />
+    <PARAM id="bypass" value="0" />
+  </DISRUPTION_PRESET>
+  <DISRUPTION_PRESET version="1" id="factory.chaos.voice-damage" name="Voice Damage" author="VoxxLab" category="CHAOS" manufacturer="VoxxLab" plugin="DISRUPTION" source="vocal">
+    <PARAM id="mode" value="4" />
+    <PARAM id="drive" value="10" />
+    <PARAM id="damage" value="48" />
+    <PARAM id="tone" value="-35" />
+    <PARAM id="body" value="35" />
+    <PARAM id="crush" value="0" />
+    <PARAM id="mix" value="55" />
+    <PARAM id="output" value="-10.68" />
+    <PARAM id="hq" value="1" />
+    <PARAM id="bypass" value="0" />
+  </DISRUPTION_PRESET>
+  <DISRUPTION_PRESET version="1" id="factory.chaos.folded-mass" name="Folded Mass" author="VoxxLab" category="CHAOS" manufacturer="VoxxLab" plugin="DISRUPTION" source="bass">
+    <PARAM id="mode" value="4" />
+    <PARAM id="drive" value="16" />
+    <PARAM id="damage" value="55" />
+    <PARAM id="tone" value="-30" />
+    <PARAM id="body" value="65" />
+    <PARAM id="crush" value="15" />
+    <PARAM id="mix" value="85" />
+    <PARAM id="output" value="-9.19" />
+    <PARAM id="hq" value="1" />
+    <PARAM id="bypass" value="0" />
+  </DISRUPTION_PRESET>
+  <DISRUPTION_PRESET version="1" id="factory.chaos.reactor" name="Reactor" author="VoxxLab" category="CHAOS" manufacturer="VoxxLab" plugin="DISRUPTION" source="synth">
+    <PARAM id="mode" value="4" />
+    <PARAM id="drive" value="22" />
+    <PARAM id="damage" value="78" />
+    <PARAM id="tone" value="25" />
+    <PARAM id="body" value="10" />
+    <PARAM id="crush" value="0" />
+    <PARAM id="mix" value="90" />
+    <PARAM id="output" value="-8.84" />
+    <PARAM id="hq" value="1" />
+    <PARAM id="bypass" value="0" />
+  </DISRUPTION_PRESET>
+  <DISRUPTION_PRESET version="1" id="factory.chaos.signal-collapse" name="Signal Collapse" author="VoxxLab" category="CHAOS" manufacturer="VoxxLab" plugin="DISRUPTION" source="fx">
+    <PARAM id="mode" value="4" />
+    <PARAM id="drive" value="20" />
+    <PARAM id="damage" value="88" />
+    <PARAM id="tone" value="-50" />
+    <PARAM id="body" value="20" />
+    <PARAM id="crush" value="65" />
+    <PARAM id="mix" value="65" />
+    <PARAM id="output" value="-4" />
+    <PARAM id="hq" value="0" />
+    <PARAM id="bypass" value="0" />
+  </DISRUPTION_PRESET>
+  <DISRUPTION_PRESET version="1" id="factory.chaos.meltdown" name="MELTDOWN" author="VoxxLab" category="CHAOS" manufacturer="VoxxLab" plugin="DISRUPTION" source="fx">
+    <PARAM id="mode" value="4" />
+    <PARAM id="drive" value="36" />
+    <PARAM id="damage" value="100" />
+    <PARAM id="tone" value="-25" />
+    <PARAM id="body" value="40" />
+    <PARAM id="crush" value="85" />
+    <PARAM id="mix" value="100" />
+    <PARAM id="output" value="-6" />
+    <PARAM id="hq" value="1" />
+    <PARAM id="bypass" value="0" />
+  </DISRUPTION_PRESET>
+</DISRUPTION_FACTORY_BANK>

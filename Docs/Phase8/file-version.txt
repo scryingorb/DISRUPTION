@@ -1,0 +1,11 @@
+
+
+FileVersion      : 1.0.0
+ProductVersion   : 1.0.0
+CompanyName      : VoxxLab
+ProductName      : DISRUPTION
+OriginalFilename : 
+IsDebug          : False
+
+
+

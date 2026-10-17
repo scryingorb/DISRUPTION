@@ -1,0 +1,9 @@
+{
+    "os_revision":  9457,
+    "process_architecture":  "AMD64",
+    "os_display_version":  "25H2",
+    "source":  "Read-only registry and .NET; CIM queries denied by environment. RAM not queried.",
+    "os_build":  "26200",
+    "cpu_name":  "13th Gen Intel(R) Core(TM) i5-13600K",
+    "logical_processors":  20
+}

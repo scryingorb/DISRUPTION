@@ -1,0 +1,6 @@
+build/
+build-release/
+dist/
+release/
+*.log
+__pycache__/

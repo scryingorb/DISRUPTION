@@ -1,0 +1,50 @@
+{
+  "version": "1.0.0 RC1",
+  "host_version": "1.0.0",
+  "cids": [
+    "ABCDEF019182FAEB56784C6244737270",
+    "ABCDEF011234ABCD56784C6244737270"
+  ],
+  "manufacturer": "VoxxLab",
+  "architecture": "Windows x64 Release",
+  "files": [
+    {
+      "path": "Contents\\Resources\\moduleinfo.json",
+      "bytes": 1080,
+      "sha256": "2aee528cc551f24a42a40d26053dbb56ad301a2ece18c2e6ff95c33e6e59a20c"
+    },
+    {
+      "path": "Contents\\x86_64-win\\DISRUPTION.vst3",
+      "bytes": 10319872,
+      "sha256": "9e184973c0cc179bc0f633a84d794814946eb4bebb3b461eccb32a29490e65f5"
+    }
+  ],
+  "bundle_bytes": 10320952,
+  "dll_sha256": "9e184973c0cc179bc0f633a84d794814946eb4bebb3b461eccb32a29490e65f5",
+  "dependencies": [
+    "KERNEL32.dll",
+    "USER32.dll",
+    "GDI32.dll",
+    "SHELL32.dll",
+    "ole32.dll",
+    "OLEAUT32.dll",
+    "COMDLG32.dll",
+    "ADVAPI32.dll",
+    "WININET.dll",
+    "WS2_32.dll",
+    "VERSION.dll",
+    "SHLWAPI.dll",
+    "WINMM.dll",
+    "dbghelp.dll",
+    "d2d1.dll",
+    "dxgi.dll",
+    "d3d11.dll",
+    "dcomp.dll",
+    "IMM32.dll",
+    "COMCTL32.dll",
+    "dwmapi.dll"
+  ],
+  "frozen_file_count": 37,
+  "frozen_changed": [],
+  "dist_unchanged": true
+}
